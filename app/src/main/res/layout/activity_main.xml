@@ -26,12 +26,6 @@
         android:layout_height="wrap_content"
         android:hint="Enter Address"/>
 
-    <EditText
-        android:id="@+id/edtMobile"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter Mobile"/>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">

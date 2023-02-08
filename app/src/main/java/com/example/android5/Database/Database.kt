@@ -50,5 +50,17 @@ class Database(context: Context?) : SQLiteOpenHelper(context, "MyData.db", null,
         return stdList
     }
 
+    fun updateData(name:String, surname:String, address:String, id:Int) {
+        var db = writableDatabase
+        var values = ContentValues()
+        values.put("name",name)
+        values.put("surname",surname)
+        values.put("address",address)
+        db.update("students",values,"id=$id",null);
+    }
 
 }
+
+
+
+
