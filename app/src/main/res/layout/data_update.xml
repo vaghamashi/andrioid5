@@ -30,7 +30,6 @@
         android:layout_height="wrap_content"
         android:hint="Enter Address" />
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -42,7 +41,6 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="Update" />
-
 
     </LinearLayout>
 
