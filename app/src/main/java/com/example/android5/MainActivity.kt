@@ -1,5 +1,6 @@
 package com.example.android5
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.android5.Database.RoomDB
@@ -14,11 +15,13 @@ class MainActivity : AppCompatActivity() {
 
         var db = RoomDB.getInstance(this)
 
-        binding.btnAdd.setOnClickListener {
+        binding.btnShow.setOnClickListener {
+            startActivity(Intent(this,ShowActivity::class.java))
+        }
 
+        binding.btnAdd.setOnClickListener {
             var food = FoodEntity(binding.edtName.text.toString(),binding.edtPrice.text.toString().toInt(),binding.rtfood.rating)
             db.foods().addFood(food)
-
         }
 
 

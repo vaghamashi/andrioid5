@@ -1,6 +1,7 @@
 package com.example.android5
 
 import androidx.room.Dao
+import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
 
@@ -12,5 +13,8 @@ interface FoodDao {
 
     @Query("SELECT * FROM food")
     fun getFood() : List<FoodEntity>
+
+    @Delete
+    fun deleteFood(food : FoodEntity)
 
 }
